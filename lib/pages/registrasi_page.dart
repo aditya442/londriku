@@ -99,33 +99,6 @@ class RegisState extends State<Registrasi_page>{
                 ),
               ),
               SizedBox(
-                height: 20,
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 32),
-                child: Material(
-                  elevation: 2.0,
-                  borderRadius: BorderRadius.all(Radius.circular(30)),
-                  child: TextField(
-                    onChanged: (String value) {},
-                    cursorColor: Colors.deepOrange,
-                    decoration: InputDecoration(
-                        hintText: "Password",
-                        prefixIcon: Material(
-                          elevation: 0,
-                          borderRadius: BorderRadius.all(Radius.circular(30)),
-                          child: Icon(
-                            Icons.lock,
-                            color: Colors.red,
-                          ),
-                        ),
-                        border: InputBorder.none,
-                        contentPadding:
-                        EdgeInsets.symmetric(horizontal: 25, vertical: 13)),
-                  ),
-                ),
-              ),
-              SizedBox(
                 height: 25,
               ),
               Padding(
@@ -136,7 +109,7 @@ class RegisState extends State<Registrasi_page>{
                         color: Color(0xffff3a5a)),
                     child: FlatButton(
                       child: Text(
-                        "Login",
+                        "Regiater",
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w700,
@@ -148,34 +121,6 @@ class RegisState extends State<Registrasi_page>{
               SizedBox(
                 height: 20,
               ),
-              Center(
-                child: Text(
-                  "FORGOT PASSWORD ?",
-                  style: TextStyle(
-                      color: Colors.red, fontSize: 12, fontWeight: FontWeight.w700),
-                ),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    "Don't have an Account ? ",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 12,
-                        fontWeight: FontWeight.normal),
-                  ),
-                  Text("Sign Up ",
-                      style: TextStyle(
-                          color: Colors.red,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 12,
-                          decoration: TextDecoration.underline)),
-                ],
-              )
             ],
           ),
         ));
