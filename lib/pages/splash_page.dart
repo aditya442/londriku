@@ -4,6 +4,7 @@ import 'package:laundryku/pages/onboarding_page.dart';
 import 'package:laundryku/pages/login_page.dart';
 import 'package:laundryku/utils/utils.dart';
 import 'package:laundryku/Localbindings.dart';
+import 'package:laundryku/pages/registrasi_page.dart';
 
 //
 //class SplashScreen extends StatefulWidget {
@@ -131,15 +132,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
     String isOnBoard = await LocalStorage.sharedInstance.readValue(Constants.isOnBoard);
     String userId = await LocalStorage.sharedInstance.readValue(Constants.userId);
-    String namaUser = await LocalStorage.sharedInstance.readValue(Constants.namaUser);
-    String tipeUser = await LocalStorage.sharedInstance.readValue(Constants.tipeUser);
-    String emailUser = await LocalStorage.sharedInstance.readValue(Constants.emailUser);
 
     print("isOnBoard  $isOnBoard");
-    print("userId  $userId");
-    print("tipeUser  $tipeUser");
-    print("namaUser  $namaUser");
-    print("EmailUser  $emailUser");
+
 
     if(isOnBoard ==null || isOnBoard == "0"){
       //Navigate to OnBoarding Screen.

@@ -11,6 +11,7 @@ import 'package:laundryku/utils/colors.dart';
 import 'package:laundryku/model/intro.dart';
 import 'package:laundryku/utils/utils.dart';
 import 'package:laundryku/pages/intro_page.dart';
+import 'package:laundryku/pages/registrasi_page.dart';
 
 class Intro_Page extends StatefulWidget {
   @override
@@ -26,7 +27,6 @@ class _IntroPageState extends State<Intro_Page> {
     IntroPage("assets/images/intro_2.png","", "Londriku!\n"),
     IntroPage("assets/images/intro_3.png","", "Londriku!\n"),
     IntroPage("assets/images/intro_1.png","", "Londriku!\n"),
-    IntroPage("assets/images/intro_4.png","", "Londriku!\n"),
 //    IntroPage("assets/images/onboard_2.png","Halaman 2", "Informasi Halaman! \n \n Dua!"),
 //    IntroPage("assets/images/onboard_3.png","Halaman 3", "Informasi Halaman \n \n Tiga!"),
   ];
