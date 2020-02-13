@@ -31,7 +31,7 @@ dependencies:
   flutter_staggered_grid_view:
   connectivity:
   http:
-  flutter_secure_storage:
+  flutter_secure_storage: any
   fancy_bottom_navigation:
   rflutter_alert:
   flutter_money_formatter:

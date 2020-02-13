@@ -17,21 +17,21 @@ class VerifiState extends State<Verification_Page>{
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-         Container(
-           child: Image.asset('assets/images/veri.png',height: 150,width: 200,),
-         ),
-      Container(
-        margin: EdgeInsets.only(left: 50,right: 50),
-        child: new TextField(
+              children: <Widget>[
+            Container(
+                child: Image.asset('assets/images/veri.png',height: 150,width: 200,),
+             ),
+             Container(
+              margin: EdgeInsets.only(left: 50,right: 50),
+               child: new TextField(
              decoration: new InputDecoration(
             border: new OutlineInputBorder(
                 borderSide: new BorderSide(color: Colors.teal)
             ),
             helperText: 'Masukan Code Anda Dengan Benar',
-
-    ),
-      ),),
+             ),
+             ),
+            ),
             SizedBox(height: 20,),
             Container(
               width: 100,
@@ -39,7 +39,6 @@ class VerifiState extends State<Verification_Page>{
                   borderRadius: BorderRadius.all(Radius.circular(70)),
                   color: Color(0xff1e88e5)),
               child: FlatButton(
-
                 child: Text(
                   "Verify",
                   style: TextStyle(
@@ -51,11 +50,10 @@ class VerifiState extends State<Verification_Page>{
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> Ubah_Password() ));
                 },
               ),
-            )
-
+            ),
           ],
-     ),
-   ),
+          ),
+        ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:laundryku/pages/navigation/home_page.dart';
+import 'package:laundryku/pages/navigation/navigation_page.dart.';
 
 class Nama_Toko extends StatefulWidget{
   @override
@@ -60,7 +61,7 @@ class TokoState extends State<Nama_Toko>{
                   RaisedButton(
                     child: Text("Lanjutkan",style: TextStyle(fontSize: 20),),
                     onPressed:(){
-                      Navigator.push(context,MaterialPageRoute(builder: (context)=> Home_page()));
+                      Navigator.push(context,MaterialPageRoute(builder: (context)=> NavPage()));
                     },
                     color: Colors.red,
                     textColor: Colors.white,

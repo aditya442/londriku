@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:laundryku/pages/login_page.dart';
 
 class Profile_page extends StatefulWidget{
   @override
   HomeState createState()=> HomeState();
 }
 class HomeState extends State<Profile_page>{
+
 
   int selected = -1;
   void onChanged(int value) {
@@ -13,6 +15,7 @@ class HomeState extends State<Profile_page>{
     });
     print('pilihan:${this.selected}');
   }
+
 
 
   void nama() async {
@@ -116,6 +119,8 @@ class HomeState extends State<Profile_page>{
     );
     showDialog(context: context, builder: (context) => alertDialog);
   }
+
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -129,7 +134,6 @@ class HomeState extends State<Profile_page>{
         ),
       body: SingleChildScrollView(
         child: Center(
-
             child: Container(
               child: Column(
                 children: <Widget>[
@@ -147,9 +151,6 @@ class HomeState extends State<Profile_page>{
                                 color: Colors.orangeAccent.shade700,
                                 style: BorderStyle.solid,
                                 width: 2.0),
-                            image: DecorationImage(
-                                image: AssetImage('assets/images/aditya.jpeg')
-                            )
                         ),
                       ),
                       Container(
@@ -168,7 +169,7 @@ class HomeState extends State<Profile_page>{
                         Container(
                           padding: EdgeInsets.only(left: 10, right: 10),
                           child: Card(
-                            elevation: 3,
+                            elevation: 0,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
@@ -415,15 +416,10 @@ class HomeState extends State<Profile_page>{
                     elevation: 5,
                     child: Container(
                       child: GestureDetector(
-                        onTap: (){},
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=> Login_page()));
+                        },
                         child: ListTile(
-//                          leading:   Padding(
-//                            padding: const EdgeInsets.only( right: 30),
-//                            child: CircleAvatar(
-//                              backgroundColor:  Colors.red,
-//                              child: Icon(Icons.exit_to_app, color: Colors.white),
-//                            ),
-//                          ),
                           title: Center(child: Text('Keluar',style: TextStyle(color: Colors.white,fontSize: 20),)),
                          // trailing: Icon(Icons.arrow_forward_ios),
                         ),
@@ -436,6 +432,5 @@ class HomeState extends State<Profile_page>{
         ),
       ),
     );
-
   }
 }
